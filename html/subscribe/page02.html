@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+ <html lang="ko">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta name="viewport">
+  	<title>Tway Plus</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="title" content="티웨이">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta property="og:type" content="website">
+  	<meta property="og:title" content="티웨이플러스">
+  	<meta property="og:description" content="">
+  	<meta property="og:url" content="">
+  	<meta property="og:image" content="http://contents-image.twayair.com/membership/images/common/twayplus_thumb.png">
+  	<meta name="twitter:card" content="summary">
+  	<meta name="twitter:title" content="">
+  	<meta name="twitter:url" content="">
+  	<meta name="twitter:image" content="http://contents-image.twayair.com/membership/images/common/favicon144.ico">
+  	<link rel="shortcut icon" type="image/x-icon" href="https://contents-image.twayair.com/payment/images/common/favicon32.ico">
+  	<link rel="shortcut icon" href="https://contents-image.twayair.com/payment/images/common/favicon32.ico">
+  	<link rel="apple-touch-icon" href="http://contents-image.twayair.com/membership/images/common/favicon57.png">
+  	<link rel="apple-touch-icon" href="http://contents-image.twayair.com/membership/images/common/favicon72.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="http://contents-image.twayair.com/membership/images/common/favicon144.png">
+  	<link rel="apple-touch-icon-precomposed" href="http://contents-image.twayair.com/membership/images/common/favicon48.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="https://contents-image.twayair.com/payment/images/common/favicon144.png">
+  	<link rel="apple-touch-icon" href="https://contents-image.twayair.com/payment/images/common/favicon72.png">
+  	<link rel="stylesheet" type="text/css" href="https://contents-image.twayair.com/membership/css/jquery.fullpage.min.css" media="all" /> <!-- 2022-07-13 (버전이슈)(위에꺼주석하고밑에신규추가) :: leh explain ++ -->
+  	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+  	<link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="all and (max-width:1180px)">
+  	<link rel="stylesheet" type="text/css" href="../../css/pc.css" media="all and (min-width:1181px)"> <!-- pc상대경로 -->
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/jquery-3.6.0.min.js"></script> 
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/jquery.fullPage.min.js"></script> <!-- 2022-07-13 (버전이슈)(위에꺼주석하고밑에신규추가) :: leh explain ++ -->
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/swiper.js"></script>
+  	<script type="text/javascript" src="../../js/ui_common.js"></script> <!-- 퍼블쪽 js파일은 1개 -->
+  </head>
+  <body class="sub"><!-- 서브페이지 : sub -->
+    <!-- 본문 바로가기 -->
+    <div class="skip_nav" title="스킵메뉴">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <!--// 본문 바로가기 -->
+    <!-- header -->
+    <header id="header">
+        <h1>
+            <a href="#" title="tway plus">
+                <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+            </a>
+        </h1>
+        <div class="header_inner">
+            <a class="btn_subscribe" href="#" title="구독하기">구독하기</a>
+            <a class="btn_login" href="#" title="로그인/로그아웃 버튼"></a>
+            <button class="btn_nav" type="button" title="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav_wrap">
+            <div class="nav_header">
+                <a class="btn_mypage" href="#" title="마이페이지로 가기"><span class="a11y-hidden">마이페이지</span></a> <!-- 2022-07-21 대체텍스트 span태그를 넣어줍니다. -->
+                <!-- 
+                    2022-07-20
+                    button태그 안에 대체텍스트를 span태그로 감싸줍니다.
+                -->
+                <button class="btn_logout" type="button" title="로그아웃"><span class="a11y-hidden">로그아웃</span></button>
+                <!-- 2022-07-20 -->
+                <a href="javascript:;" class="btn_close"><span class="a11y-hidden">닫기버튼</span></a>
+                <!-- // 2022-07-20 -->
+            </div>
+            <div class="nav_container">
+                <h2 class="hidden">메뉴</h2>
+                <!-- 로그인O 구독X -->
+                <div class="nav_top">
+                    <div class="account status_login"><!-- 로그인상태:status_login, 로그아웃상태:status_logout -->
+                        <strong>주경원님<span class="ico_nav_login"></span></strong>
+                    </div>
+                    <div class="nav_top_con">
+                        <p>
+                            <!--
+                                2022-07-21 
+                                이미지리네임했습니다.(=사이즈 변경 -> 1x로 export)
+                                1x로 export했을때 모바일에서 width를 91px로 잡아주고 있습니다. (.nav .nav_top_con p img에 width:91px 있습니다)
+
+                                리네임전 이미지명주소: https://contents-image.twayair.com/membership/images/common/twayplus logo_w.png 입니다.
+                            -->
+                            <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo_new.png" alt="tway plus">을<br>연장 하시겠습니까?
+                        </p>
+                        <a href="#" class="btn_subscribe_extend" tabindex="0">연장하기</a> <!-- 2022-07-21 tabindex추가 -->
+                    </div>
+                </div>
+                <!-- //로그인O 구독X -->
+                <div class="menu_con">
+                    <!--
+                        2022-07-20
+                        box라는 클래스로 한번 더 감싸줍니다.
+                    -->
+                    <div class="box">
+                        <a class="srt_1depth" href="#" >홈</a>
+                        <div>
+                            <a class="srt_1depth product_introduce" href="#" >상품소개</a>
+                            <ul class="srt_2depth" >
+                                <li><a href="#" >LITE</a></li>
+                                <li><a href="#" >BASIC</a></li>
+                                <li><a href="#" >PREMIUM</a></li>
+                                <li><a href="#" >PREMIUM PLUS</a></li>
+                            </ul>
+                        </div>
+                        <a class="srt_1depth benefitMenu" href="#" data-link="3">혜택안내</a> <!-- 2022-07-21 혜택안내 클릭 시 메인 > 혜택안내 영역으로 넘어가기 위해 이중클래스 추가하고, data-link추가합니다. -->
+                        <ul class="srt_etc" >
+                            <li><a href="#" >공지사항</a></li>
+                            <li><a href="#" >자주 묻는 질문</a></li>
+                            <li><a href="#" >이용약관</a></li>
+                        </ul>
+                    </div>
+                    <!-- 2022-07-20 광고영역 마크업 순서 변경합니다.(pc 리사이즈 문제로 변경합니다.) -->
+                     <!-- 메뉴 > 광고영역 -->
+                    <div class="ad_wrap swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                                <a href="#" target="_blank">
+                                    <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                    <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                                <a href="#" target="_blank">
+                                    <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                    <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- //메뉴 > 광고영역 -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- pc 퍼블 진행중 - 임시 css - 개발시 제외해 주세요 -->
+    <style>
+      @media screen and (min-width:1181px) {
+        body {position:relative; display:none;}
+        body:after {position:absolute; left:0; top:0; width:100%; height:100%; display:block; content:"PC진행중입니다."; z-index:999;}
+      }
+    </style>
+    <!-- //pc 퍼블 진행중 - 임시 css - 개발시 제외해 주세요 -->
+    <div id="wrap">
+      <!-- Content -->
+      <div id="container">
+        <div id="content" class="content">
+            <!-- LNB (path_wrap) -->
+            <div class="path_wrap">
+                <div class="path">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">티웨이플러스 구독 신청</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // LNB (path_wrap) -->
+            <h3 class="page_tit">
+                구독신청
+            </h3> 
+           <!-- step 1 -->
+           <div class="step_wrap first">
+                <div class="step_con">
+                    <div class="tit_step">
+                        <span class="num_step">STEP 1</span>
+                        <span class="text_step">원하는 상품을 선택해주세요.</span>
+                    </div>
+                    <button class="btn_viewall" type="button"><span class="icon_search"></span>상품 한눈에 보기</button>
+                    <div class="box_wrap product"><!-- 상품선택 : product -->
+                        <a href="#" class="box_con">
+                            <input type="radio" name="product">
+                            <div class="tit_area">
+                                <strong>LITE</strong>
+                                <span class="period">6개월(180일)</span>
+                                <span class="option"></span>
+                            </div>
+                            <span class="discount">00%</span>
+                            <div class="box_bottom">
+                                <del>KRW 259,000 </del>
+                                <span class="red">KRW 29,000 </span>
+                            </div>
+                        </a>
+                        <a href="#" class="box_con">
+                            <input type="radio" name="product">
+                            <div class="tit_area">
+                                <strong>BASIC</strong>
+                                <span class="period">1년(365일)</span>
+                            </div>
+                            <span class="discount">00%</span>
+                            <div class="box_bottom">
+                                <del>KRW 259,000 </del>
+                                <span class="red">KRW 79,000 </span>
+                            </div>
+                        </a>
+                        <a href="#" class="box_con">
+                            <input type="radio" name="product">
+                            <div class="tit_area">
+                                <strong>PREMIUM</strong>
+                                <span class="period">1년(365일)</span>
+                            </div>
+                            <span class="discount">00%</span>
+                            <div class="box_bottom">
+                                <span class="red">KRW 149,000 </span>
+                            </div>
+                        </a>
+                        <a href="#" class="box_con">
+                            <input type="radio" name="product">
+                            <div class="tit_area">
+                                <strong>PREMIUM PLUS</strong>
+                                <span class="period">1년(365일)</span>
+                                <span class="benefit_other">장거리 노선 포함</span>
+                            </div>
+                            <span class="discount">00%</span>
+                            <div class="box_bottom">
+                                <del>KRW 259,000 </del>
+                                <span class="red">KRW 259,000 </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="step_con">
+                    <p class="tit_sentence">
+                        가족 또는 친구, 연인과 여행가시나요?<br>
+                        <span class="emphasis">동반 1인 추가 시 함께 혜택을 누릴 수 있어요!</span>
+                    </p>
+                    <div class="box_wrap personal"><!-- 동반인선택 : personal -->
+                        <a href="#" class="box_con">
+                            <div class="tit_area">
+                                <strong>본인</strong>
+                            </div>
+                            <div class="box_bottom">
+                                <span class="option normal">추가 비용 없음</span>
+                            </div>
+                        </a>
+                        <a href="#" class="box_con">
+                            <div class="tit_area"><strong>본인+동반 1인</strong></div>
+                            <div class="box_bottom">
+                                <span class="option red">+ KRW 20,000</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- //step 1 -->
+            <!-- step 2 -->
+            <div class="step_wrap">
+                <div class="tit_step">
+                    <span class="num_step">STEP 2</span>
+                    <span class="text_step">약관에 동의해주세요.</span>
+                </div>
+                <div class="lst_agree">
+                    <div class="input_wrap">
+                        <label>
+                            <input type="checkbox" name="agree">
+                            <span class="icon"></span>
+                            <span class="txt">전체 약관 동의</span>
+                        </label>
+                    </div>
+                    <div class="input_wrap">
+                        <label>
+                            <input type="checkbox" name="agree">
+                            <span class="icon"></span>
+                            <span class="txt">[필수] 티웨이플러스 이용 약관</span>
+                            <span class="icon_arrow"></span>
+                        </label>
+                    </div>
+                    <div class="input_wrap">
+                        <label>
+                            <input type="checkbox" name="agree">
+                            <span class="icon"></span>
+                            <span class="txt">[필수] 개인정보 수집 및 이용 동의</span>
+                            <span class="icon_arrow"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- //step 2 -->
+            <div class="btn_wrap">
+                <button class="btn_type1" type="reset">홈으로 이동</button>
+                <button class="btn_type2" type="submit">KRW 29,000 결제하기</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <a href="#" class="logo_footer" title="티웨이플러스">
+            <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+        </a>
+        <div class="f-wrap">
+            <div class="f_address">
+                <p>대표이사 : 정홍근</p>
+                <p>사업자등록번호 : 101-81-948000</p>
+                <address>주소 : 서울시 강서구 하늘길 210 국제화물청사 3층</address>
+                <p>통신판매업신고번호 2017-서울강서-1292</p>
+                <p>개인정보관리 책임자 경영본부장 김형이</p>
+                <p>Copyright ⓒ 2019 t’way Air. All Rights Reserved.</p>
+            </div>
+            <ul class="f_menu">
+                <li><a href="#" title="이용약관">이용약관</a></li>
+                <li><a href="#" title="공지사항">공지사항</a></li>
+                <li><a href="#" title="FAQ">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+  </body>
+</html>
+  

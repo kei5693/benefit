@@ -1,0 +1,85 @@
+<header id="header">
+    <h1>
+        <a href="#" title="tway plus">
+            <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+        </a>
+    </h1>
+    <div class="header_inner">
+        <a class="btn_subscribe" href="#" title="구독하기">구독하기</a>
+        <a class="btn_login" href="#" title="로그인/로그아웃 버튼"></a>
+        <button class="btn_nav" type="button" title="메뉴 열기"></button>
+    </div>
+    <div class="nav_wrap">
+        <div class="nav_header">
+            <!-- 2022-07-20 -->
+            <a href="javascript:;" class="btn_close"><span class="a11y-hidden">닫기버튼</span></a>
+            <!-- // 2022-07-20 -->
+        </div>
+        <div class="nav_container">
+            <h2 class="hidden">메뉴</h2>
+            <!-- 로그인X 구독여부모름 -->
+            <div class="nav_top">
+                <div class="account status_logout" tabindex="0"><!-- 로그인상태:status_login, 로그아웃상태:status_logout --> <!-- 2022-07-21 tabindex추가 -->
+                    <a href="#">로그인 하기<span class="ico_nav_login"></span></a>
+                </div>
+                <div class="nav_top_con">
+                    <p>
+                        <!--
+                            2022-07-21 
+                            이미지리네임했습니다.(=사이즈 변경 -> 1x로 export)
+                            1x로 export했을때 모바일에서 width를 91px로 잡아주고 있습니다. (.nav .nav_top_con p img에 width:91px 있습니다)
+                        -->
+                        <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo_new.png" alt="tway plus">를<br>구독하시겠습니까?
+                    </p>
+                    <a href="#" class="btn_subscribe_extend" tabindex="0">구독하기</a> <!-- 2022-07-21 tabindex추가 -->
+                </div>
+            </div>
+            <!-- //로그인X 구독여부모름 -->
+            <div class="menu_con">
+                <!--
+                    2022-07-20
+                    box라는 클래스로 한번 더 감싸줍니다.
+                -->
+                <div class="box">
+                    <a class="srt_1depth" href="#" >홈</a>
+                    <div>
+                        <a class="srt_1depth product_introduce" href="#" >상품소개</a>
+                        <ul class="srt_2depth" >
+                            <li><a href="#" >LITE</a></li>
+                            <li><a href="#" >BASIC</a></li>
+                            <li><a href="#" >PREMIUM</a></li>
+                            <li><a href="#" >PREMIUM PLUS</a></li>
+                        </ul>
+                    </div>
+                    <a class="srt_1depth benefitMenu" href="#" data-link="3">혜택안내</a> <!-- 2022-07-21 혜택안내 클릭 시 메인 > 혜택안내 영역으로 넘어가기 위해 이중클래스 추가하고, data-link추가합니다. -->
+                    <ul class="srt_etc" >
+                        <li><a href="#" >공지사항</a></li>
+                        <li><a href="#" >자주 묻는 질문</a></li>
+                        <li><a href="#" >이용약관</a></li>
+                    </ul>
+                </div>
+                <!--
+                    2022-07-20 광고영역 마크업 순서 변경합니다.(pc 리사이즈 문제로 변경합니다.)
+                -->
+                <!-- 메뉴 > 광고영역 -->
+                <div class="ad_wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                            <a href="#" target="_blank">
+                                <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img3.png" alt="티웨이와 함께 떠나는 광고여행 광고문구를 입력하세요. 티웨이플러스 가입 후 신용카드 결제 시 30% 할인 혜택 제공"> <!-- 2022-07-20 -->
+                                <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                            <a href="#" target="_blank">
+                                <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img3.png" alt="티웨이와 함께 떠나는 광고여행 광고문구를 입력하세요. 티웨이플러스 가입 후 신용카드 결제 시 30% 할인 혜택 제공"> <!-- 2022-07-20 -->
+                                <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <!-- //광고영역 -->
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+ <html lang="ko">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<meta name="viewport">
+  	<title>Tway Plus</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="title" content="티웨이">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+  	<meta property="og:type" content="website">
+  	<meta property="og:title" content="티웨이플러스">
+  	<meta property="og:description" content="">
+  	<meta property="og:url" content="">
+  	<meta property="og:image" content="http://contents-image.twayair.com/membership/images/common/twayplus_thumb.png">
+  	<meta name="twitter:card" content="summary">
+  	<meta name="twitter:title" content="">
+  	<meta name="twitter:url" content="">
+  	<meta name="twitter:image" content="http://contents-image.twayair.com/membership/images/common/favicon144.ico">
+  	<link rel="shortcut icon" type="image/x-icon" href="https://contents-image.twayair.com/payment/images/common/favicon32.ico">
+  	<link rel="shortcut icon" href="https://contents-image.twayair.com/payment/images/common/favicon32.ico">
+  	<link rel="apple-touch-icon" href="http://contents-image.twayair.com/membership/images/common/favicon57.png">
+  	<link rel="apple-touch-icon" href="http://contents-image.twayair.com/membership/images/common/favicon72.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="http://contents-image.twayair.com/membership/images/common/favicon144.png">
+  	<link rel="apple-touch-icon-precomposed" href="http://contents-image.twayair.com/membership/images/common/favicon48.png">
+  	<link rel="apple-touch-icon" sizes="144x144" href="https://contents-image.twayair.com/payment/images/common/favicon144.png">
+  	<link rel="apple-touch-icon" href="https://contents-image.twayair.com/payment/images/common/favicon72.png">
+  	<link rel="stylesheet" type="text/css" href="https://contents-image.twayair.com/membership/css/jquery.fullpage.min.css" media="all" /> <!-- 2022-07-13 (버전이슈)(위에꺼주석하고밑에신규추가) :: leh explain ++ -->
+  	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+  	<link rel="stylesheet" type="text/css" href="../../css/mobile.css" media="all and (max-width:1180px)">
+  	<link rel="stylesheet" type="text/css" href="../../css/pc.css" media="all and (min-width:1181px)"> <!-- pc상대경로 -->
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/jquery-3.6.0.min.js"></script> 
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/jquery.fullPage.min.js"></script> <!-- 2022-07-13 (버전이슈)(위에꺼주석하고밑에신규추가) :: leh explain ++ -->
+  	<script type="text/javascript" src="https://contents-image.twayair.com/membership/js/lib/swiper.js"></script>
+  	<script type="text/javascript" src="../../js/ui_common.js"></script> <!-- 퍼블쪽 js파일은 1개 -->
+  </head>
+  <body class="sub"><!-- 서브페이지 : sub -->
+    <!-- 본문 바로가기 -->
+    <div class="skip_nav" title="스킵메뉴">
+      <a href="#content">본문 바로가기</a>
+    </div>
+    <!--// 본문 바로가기 -->
+    <!-- header -->
+    <header id="header">
+        <h1>
+            <a href="#" title="tway plus">
+                <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+            </a>
+        </h1>
+        <div class="header_inner">
+            <a class="btn_subscribe" href="#" title="구독하기">구독하기</a>
+            <a class="btn_login" href="#" title="로그인/로그아웃 버튼"></a>
+            <button class="btn_nav" type="button" title="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav_wrap">
+            <div class="nav_header">
+                <!-- 
+                    2022-07-20
+                    button태그 안에 대체텍스트를 span태그로 감싸줍니다.
+                -->
+                <a class="btn_mypage" href="#" title="마이페이지"><span class="a11y-hidden">마이페이지</span></a>
+                <button class="btn_logout" type="button" title="로그아웃"><span class="a11y-hidden">로그아웃</span></button>
+                <!-- 2022-07-20 -->
+                <a href="javascript:;" class="btn_close"><span class="a11y-hidden">닫기버튼</span></a>
+                <!-- // 2022-07-20 -->
+            </div>
+            <div class="nav_container">
+                <h2 class="hidden">메뉴</h2>
+                <!-- 로그인O 구독중 -->
+                <div class="nav_top">
+                    <div class="account status_login"><!-- 로그인상태:status_login, 로그아웃상태:status_logout -->
+                        <strong>주경원님</strong>
+                        <span>PRIMIUM PLUS</span>
+                    </div>
+                    <div class="nav_top_con">
+                        <div class="benefit_area">
+                            <a href="#">
+                                <span class="benefit_tit">지금까지 혜택 받은 금액<span class="icon_benefit"></span></span>
+                                <span class="benefit_con">KRW 150,000</span>
+                            </a>
+                        </div>
+                        <div class="benefit_area">
+                            <a href="#">
+                                <span class="benefit_tit">티웨이 - e 카드<span class="icon_benefit"></span></span>
+                                <span class="benefit_con">1개</span>
+                            </a>
+                        </div>
+                        <div class="benefit_area">
+                            <a href="#">
+                                <span class="benefit_tit">쿠폰<span class="icon_benefit"></span></span>
+                                <span class="benefit_con">15개</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //로그인O 구독중 -->
+                <div class="menu_con">
+                    <!--
+                        2022-07-20
+                        box라는 클래스로 한번 더 감싸줍니다.
+                    -->
+                    <div class="box">
+                        <a class="srt_1depth" href="#" >홈</a>
+                        <div>
+                            <a class="srt_1depth product_introduce" href="#">상품소개</a> <!-- 2022-07-21 상품소개 하위메뉴 보여줄때 디자인 간격요청 수정으로 인해 product라는 클래스 추가합니다. --> <!-- 2022-07-21 product_introduce클래스추가 -->
+                            <ul class="srt_2depth" >
+                                <li><a href="#">LITE</a></li>
+                                <li><a href="#">BASIC</a></li>
+                                <li><a href="#">PREMIUM</a></li>
+                                <li><a href="#">PREMIUM PLUS</a></li>
+                            </ul>
+                        </div>
+                        <a class="srt_1depth benefitMenu" href="#" data-link="3">혜택안내</a> <!-- 2022-07-21 혜택안내 클릭 시 메인 > 혜택안내 영역으로 넘어가기 위해 이중클래스 추가하고, data-link추가합니다. -->
+                        <ul class="srt_etc" >
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">이용약관</a></li>
+                        </ul>
+                    </div>
+                    <!-- 2022-07-20 광고영역 마크업 순서 변경합니다.(pc 리사이즈 문제로 변경합니다.) -->
+                    <!-- 메뉴 > 광고영역 -->
+                    <div class="ad_wrap swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                                <a href="#" target="_blank">
+                                    <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                    <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                                <a href="#" target="_blank">
+                                    <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                    <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- //메뉴 > 광고영역 -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- pc 퍼블 진행중 - 임시 css - 개발시 제외해 주세요 -->
+    <!-- 
+    <style>
+      @media screen and (min-width:1181px) {
+        body {position:relative; display:none;}
+        body:after {position:absolute; left:0; top:0; width:100%; height:100%; display:block; content:"PC진행중입니다."; z-index:999;}
+      }
+    </style>
+     -->
+    <!-- //pc 퍼블 진행중 - 임시 css - 개발시 제외해 주세요 -->
+    <div id="wrap">
+      <!-- Content -->
+      <div id="container">
+        <div id="content" class="content">
+            <!-- LNB (path_wrap) -->
+            <div class="path_wrap">
+                <div class="path">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">마이페이지</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- // LNB (path_wrap) -->
+            <h3 class="page_tit">마이페이지</h3> 
+            <div class="parivacy_wrap">
+                <strong class="user_name"></strong>
+                <div class="shortcut_privacy">
+                    <a href="#">개인 정보 관리</a>
+                    <a href="#">로그아웃</a>
+                </div>
+                <div class="status_subscribe">
+                    <span class="srt_subscribe">구독중</span>
+                    <span class="txt_subscribe">티웨이플러스 회원 번호 919012538165</span>
+                </div>
+            </div>
+            <div class="product_benefit">
+                <div class="product">
+                    <span class="txt_product">현재 구독중인 티웨이플러스 상품</span>
+                    <strong class="red">PRIMIUN Plus</strong>
+                    <span class="about_product">동반인 혜택 제공 : 1명</span>
+                    <span class="about_product">유효기간 : 2022.5.11 ~ 2023.5.10 (365일)</span>
+                </div>
+                <div class="benefit">
+                    <div>
+                        <span class="txt_benefit">지금까지 혜택 받은 금액</span>
+                        <span class="cnt_benefit">-</span>
+                    </div>
+                    <div>
+                        <span class="txt_benefit">사용 가능한 티웨이-e카드</span>
+                        <span class="cnt_benefit">0개</span>
+                    </div>
+                    <div>
+                        <span class="txt_benefit">보유중인 나의 쿠폰</span>
+                        <span class="cnt_benefit">0개</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="con_tit">나의 티웨이-e카드<span>보유 카드 12개</span></h3> 
+            <div class="ecard_wrap swiper">
+                <div class="swiper-wrapper"></div>
+                    <div class="swiper-slide">
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 1</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 2</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 3</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-slide exp"><!-- 만료 : exp -->
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 4</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-slide exp"><!-- 만료 : exp -->
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 5</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="//contents-image.twayair.com/membership/images/sub/ecard01.png" alt="">
+                        <strong>티웨이-e카드 6</strong>
+                        <div class="myecrad_wrap">
+                            <table>
+                                <caption>나의 티웨이-e카드의 기간, 카드 번호, 잔액 정보 표입니다.</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>기간</th>
+                                        <td>2022.5.11 - 2023.5.10</td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드 번호</th>
+                                        <td>1234***4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>잔액</th>
+                                        <td class="red">KRW 249,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="#" class="ad_wrap">
+                <img src="" alt="">
+            </a>
+            <h4 class="con_tit">티웨이플러스 구독 내역</h3> 
+            <div class="ecard_wrap ">
+                <a href="#">
+                    <div class="card_area"> 
+                        <table>
+                            <caption>티웨이플러스 구독 내역의 이용기간, 결제일, 결제 금액, 결제 수단 정보 표입니다.</caption>
+                            <tbody>
+                                <tr>
+                                    <th>이용기간</th>
+                                    <td>2022.5.11 ~ 2023.5.10</td>
+                                </tr>
+                                <tr>
+                                    <th>결제일</th>
+                                    <td>2022.5.11</td>
+                                </tr>
+                                <tr>
+                                    <th>결제 금액</th>
+                                    <td>KRW 259,000</td>
+                                </tr>
+                                <tr>
+                                    <th>결제 수단</th>
+                                    <td>신용카드(현대카드)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <a href="#" class="logo_footer" title="티웨이플러스">
+            <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+        </a>
+        <div class="f-wrap">
+            <div class="f_address">
+                <p>대표이사 : 정홍근</p>
+                <p>사업자등록번호 : 101-81-948000</p>
+                <address>주소 : 서울시 강서구 하늘길 210 국제화물청사 3층</address>
+                <p>통신판매업신고번호 2017-서울강서-1292</p>
+                <p>개인정보관리 책임자 경영본부장 김형이</p>
+                <p>Copyright ⓒ 2019 t’way Air. All Rights Reserved.</p>
+            </div>
+            <ul class="f_menu">
+                <li><a href="#" title="이용약관">이용약관</a></li>
+                <li><a href="#" title="공지사항">공지사항</a></li>
+                <li><a href="#" title="FAQ">FAQ</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //Footer -->
+  </body>
+</html>
+ 

@@ -1,0 +1,104 @@
+<header id="header">
+    <h1>
+        <a href="#" title="tway plus">
+            <img src="https://contents-image.twayair.com/membership/images/common/twayplus_logo.png" alt="티웨이플러스">
+        </a>
+    </h1>
+    <div class="header_inner">
+        <a class="btn_subscribe" href="#" title="구독하기">구독하기</a>
+        <a class="btn_login" href="#" title="로그인/로그아웃 버튼"></a>
+        <button class="btn_nav" type="button" title="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="nav_wrap">
+        <div class="nav_header">
+            <!-- 
+                2022-07-20
+                button태그 안에 대체텍스트를 span태그로 감싸줍니다.
+            -->
+            <a class="btn_mypage" href="#" title="마이페이지"><span class="a11y-hidden">마이페이지</span></a>
+            <button class="btn_logout" type="button" title="로그아웃"><span class="a11y-hidden">로그아웃</span></button>
+            <!-- 2022-07-20 -->
+            <a href="javascript:;" class="btn_close"><span class="a11y-hidden">닫기버튼</span></a>
+            <!-- // 2022-07-20 -->
+        </div>
+        <div class="nav_container">
+            <h2 class="hidden">메뉴</h2>
+            <!-- 로그인O 구독중 -->
+            <div class="nav_top">
+                <div class="account status_login"><!-- 로그인상태:status_login, 로그아웃상태:status_logout -->
+                    <strong>주경원님</strong>
+                    <span>PRIMIUM PLUS</span>
+                </div>
+                <div class="nav_top_con">
+                    <div class="benefit_area">
+                        <a href="#">
+                            <span class="benefit_tit">지금까지 혜택 받은 금액<span class="icon_benefit"></span></span>
+                            <span class="benefit_con">KRW 150,000</span>
+                        </a>
+                    </div>
+                    <div class="benefit_area">
+                        <a href="#">
+                            <span class="benefit_tit">티웨이 - e 카드<span class="icon_benefit"></span></span>
+                            <span class="benefit_con">1개</span>
+                        </a>
+                    </div>
+                    <div class="benefit_area">
+                        <a href="#">
+                            <span class="benefit_tit">쿠폰<span class="icon_benefit"></span></span>
+                            <span class="benefit_con">15개</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- //로그인O 구독중 -->
+            <div class="menu_con">
+                <!--
+                    2022-07-20
+                    box라는 클래스로 한번 더 감싸줍니다.
+                -->
+                <div class="box">
+                    <a class="srt_1depth" href="#" >홈</a>
+                    <div>
+                        <a class="srt_1depth product_introduce" href="#">상품소개</a> <!-- 2022-07-21 상품소개 하위메뉴 보여줄때 디자인 간격요청 수정으로 인해 product라는 클래스 추가합니다. --> <!-- 2022-07-21 product_introduce클래스추가 -->
+                        <ul class="srt_2depth" >
+                            <li><a href="#">LITE</a></li>
+                            <li><a href="#">BASIC</a></li>
+                            <li><a href="#">PREMIUM</a></li>
+                            <li><a href="#">PREMIUM PLUS</a></li>
+                        </ul>
+                    </div>
+                    <a class="srt_1depth benefitMenu" href="#" data-link="3">혜택안내</a> <!-- 2022-07-21 혜택안내 클릭 시 메인 > 혜택안내 영역으로 넘어가기 위해 이중클래스 추가하고, data-link추가합니다. -->
+                    <ul class="srt_etc" >
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </div>
+                <!-- 2022-07-20 광고영역 마크업 순서 변경합니다.(pc 리사이즈 문제로 변경합니다.) -->
+                <!-- 메뉴 > 광고영역 -->
+                <div class="ad_wrap swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                            <a href="#" target="_blank">
+                                <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide" tabindex="0"> <!-- 2022-07-21 tabindex추가합니다. -->
+                            <a href="#" target="_blank">
+                                <img class="img_pc" src="https://contents-image.twayair.com/membership/images/common/ad_img.png" alt="">
+                                <img class="img_m" src="https://contents-image.twayair.com/membership/images/common/ad_img_m.png" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+                <!-- //메뉴 > 광고영역 -->
+            </div>
+        </div>
+    </div>
+</header>
